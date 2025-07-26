@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Book Recommender System</title>
-    <!-- Bootstrap 5 CDN -->
+
+    <!-- Bootstrap 5 CDN CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         body {
             background-color: #121212;
@@ -48,19 +50,28 @@
 </head>
 <body>
 
+    <!-- Responsive Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand">📚 My Book Recommender</a>
-            <div class="collapse navbar-collapse">
+
+            <!-- Mobile toggler button -->
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible nav links -->
+            <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="/recommend">Recommend</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/official_sohil03/?hl=en">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/official_sohil03/?hl=en" target="_blank">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Book Display Section -->
     <div class="container my-5">
         <h1 class="text-center">Top 50 Books</h1>
         <div class="row g-4">
@@ -80,5 +91,7 @@
         </div>
     </div>
 
+    <!-- Bootstrap JS Bundle (for navbar toggling) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
